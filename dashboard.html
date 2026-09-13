@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+    height: 100%;
+    width: 100vw;
+    background-color: #0F172A; /* Deep midnight blue */
+    color: #F8FAFC; /* Off-white text */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.main-container {
+    height: 120px;
+    width: 25%;
+    padding: 20px;
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 500px;
+    gap: 25px;
+    background-color: #2164ce; /* Slightly lighter midnight blue */
+}
+.company-section, .applied-section {
+    background-color: hsl(215, 88%, 57%); /* Slightly lighter midnight blue */
+    padding: 50px;
+    margin-block-end: auto;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+</style>
+
+<body>
+
+<div class="main-container">
+
+    <!-- CENTER PROFILE -->
+    <div class="student-card">
+        <h2>👤 Student Profile</h2>
+        <p><b>Name:</b> <span id="user">Varun Sharma</span></p>
+        <p><b>CGPA:</b> <span id="userCgpa">8</span></p>
+    </div>
+
+    <!-- CONTENT AREA -->
+    <div class="content">
+
+        <!-- COMPANIES (CENTER) -->
+        <div class="companies-section">
+            <h2>Companies</h2>
+            <div id="companies"></div>
+        </div>
+
+        <!-- APPLIED (RIGHT SIDE) -->
+        <div class="applied-section">
+            <h2>Applied Companies</h2>
+            <ul id="applied"></ul>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</body>
+</html>
